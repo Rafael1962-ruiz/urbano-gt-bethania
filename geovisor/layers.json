@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "gt-bethania",
+  "title": "Bethania: asentamientos en alto riesgo",
+  "country": {
+    "code": "GT",
+    "name": "Guatemala"
+  },
+  "map_view": {
+    "center": [
+      -90.52353,
+      14.67209
+    ],
+    "zoom": 15.2,
+    "declared_centroid": [
+      -90.52353,
+      14.67209
+    ],
+    "is_referential": true,
+    "reference_note": "Centroide declarado en S20: 14.67209, -90.52353 (Colonia Bethania, Zona 7, Ciudad de Guatemala; ≈ 21,1 ha declaradas en formulario).",
+    "area_declared": "21,1 ha según polígono del formulario S20 (geometría vectorial aún no adjunta).",
+    "scale_label": "Barrio / colonia / asentamiento"
+  },
+  "geolibre_integration": {
+    "web_app_base_url": "https://web.geolibre.app/",
+    "project_file": "geovisor/proyecto.geolibre.json",
+    "embed_layout": "maponly",
+    "supports_local_geojson_preview": true
+  },
+  "planned_controls": [
+    "Catálogo de levantamientos autorizados (ortofoto RPAS/dron, red vial y equipamiento).",
+    "Conmutador de huella urbana preliminar de los asentamientos de la zona piloto.",
+    "Panel de metadatos de calidad, fecha y resolución espacial de cada insumo.",
+    "Aviso permanente: el análisis de gabinete prioriza inspecciones y NO sustituye estudios geotécnicos ni dictámenes por lote o vivienda."
+  ],
+  "external_references": [],
+  "layers": [
+    {
+      "id": "gt-bethania-ambito-piloto",
+      "title": "Polígono de estudio en Colonia Bethania (Zona 7)",
+      "group": "Ámbito piloto",
+      "format": "geojson",
+      "geometry_type": "polygon",
+      "status": "en_preparacion",
+      "source_path": null,
+      "expected_file_hint": "geovisor/data/bethania_ambito.geojson",
+      "resolution": "Escala local barrial",
+      "style": {
+        "fill_color": "#14283F",
+        "fill_opacity": 0.1,
+        "stroke_color": "#14283F",
+        "stroke_width": 2.2
+      },
+      "caveat": "Pendiente de confirmar disponibilidad efectiva del polígono y levantamientos de campo."
+    },
+    {
+      "id": "gt-bethania-huella-preliminar",
+      "title": "Mapa preliminar de huella urbana y edificaciones",
+      "group": "Huella construida (PMV)",
+      "format": "geojson",
+      "geometry_type": "polygon",
+      "status": "en_preparacion",
+      "source_path": null,
+      "expected_file_hint": "geovisor/data/bethania_huella_urbana.geojson",
+      "resolution": "Ortofoto RPAS / Open Buildings contrastado",
+      "style": {
+        "fill_color": "#007F8B",
+        "fill_opacity": 0.5,
+        "stroke_color": "#004c54",
+        "stroke_width": 1.2
+      },
+      "caveat": "Identifica presencia física construida; no asigna nivel de riesgo individual ni autoriza escrituración."
+    },
+    {
+      "id": "gt-bethania-sectores-priorizacion",
+      "title": "Sectores agregados para priorización de verificación técnica",
+      "group": "Evaluación preliminar (fase posterior)",
+      "format": "geojson",
+      "geometry_type": "polygon",
+      "status": "en_preparacion",
+      "source_path": null,
+      "expected_file_hint": "geovisor/data/bethania_priorizacion_agregada.geojson",
+      "resolution": "Agregado público sin datos personales",
+      "style": {
+        "fill_color": "#d95f02",
+        "fill_opacity": 0.4,
+        "stroke_color": "#8c2d04",
+        "stroke_width": 1.4
+      },
+      "caveat": "Requiere definir variables, modelo de elevación/LiDAR y criterios institucionales de UDEVIPO antes de publicar."
+    }
+  ]
+}

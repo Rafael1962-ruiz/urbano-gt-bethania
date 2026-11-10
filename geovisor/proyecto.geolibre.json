@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "id": "geolibre-gt-bethania",
+  "name": "Guatemala · Bethania: asentamientos en alto riesgo",
+  "description": "La iniciativa propone organizar información de la huella urbana y de los lotes en Bethania para apoyar la revisión de condiciones de riesgo y orientar decisiones institucionales sobre obras de protección o escrituración.",
+  "metadata": {
+    "project_id": "gt-bethania",
+    "community": "Comunidad Urbana Copernicus Centroamérica",
+    "referential_frame_only": true,
+    "note": "Centroide declarado en S20: 14.67209, -90.52353 (Colonia Bethania, Zona 7, Ciudad de Guatemala; ≈ 21,1 ha declaradas en formulario)."
+  },
+  "map": {
+    "engine": "maplibre",
+    "center": [
+      -90.52353,
+      14.67209
+    ],
+    "zoom": 15.2,
+    "bearing": 0,
+    "pitch": 0,
+    "basemap": "carto-positron"
+  },
+  "sources": {},
+  "layers": [],
+  "planned_layers": [
+    {
+      "id": "gt-bethania-ambito-piloto",
+      "title": "Polígono de estudio en Colonia Bethania (Zona 7)",
+      "status": "en_preparacion",
+      "expected_file_hint": "geovisor/data/bethania_ambito.geojson",
+      "caveat": "Pendiente de confirmar disponibilidad efectiva del polígono y levantamientos de campo."
+    },
+    {
+      "id": "gt-bethania-huella-preliminar",
+      "title": "Mapa preliminar de huella urbana y edificaciones",
+      "status": "en_preparacion",
+      "expected_file_hint": "geovisor/data/bethania_huella_urbana.geojson",
+      "caveat": "Identifica presencia física construida; no asigna nivel de riesgo individual ni autoriza escrituración."
+    },
+    {
+      "id": "gt-bethania-sectores-priorizacion",
+      "title": "Sectores agregados para priorización de verificación técnica",
+      "status": "en_preparacion",
+      "expected_file_hint": "geovisor/data/bethania_priorizacion_agregada.geojson",
+      "caveat": "Requiere definir variables, modelo de elevación/LiDAR y criterios institucionales de UDEVIPO antes de publicar."
+    }
+  ]
+}
