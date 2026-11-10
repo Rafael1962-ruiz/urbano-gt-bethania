@@ -61,7 +61,7 @@
       "geometry_type": "polygon",
       "status": "en_preparacion",
       "source_path": null,
-      "expected_file_hint": "geovisor/data/bethania_ambito.geojson",
+      "expected_file_hint": "geovisor/capas/bethania_ambito.geojson",
       "resolution": "Escala local barrial",
       "style": {
         "fill_color": "#14283F",
@@ -79,7 +79,7 @@
       "geometry_type": "polygon",
       "status": "en_preparacion",
       "source_path": null,
-      "expected_file_hint": "geovisor/data/bethania_huella_urbana.geojson",
+      "expected_file_hint": "geovisor/capas/bethania_huella_urbana.geojson",
       "resolution": "Ortofoto RPAS / Open Buildings contrastado",
       "style": {
         "fill_color": "#007F8B",
@@ -97,7 +97,7 @@
       "geometry_type": "polygon",
       "status": "en_preparacion",
       "source_path": null,
-      "expected_file_hint": "geovisor/data/bethania_priorizacion_agregada.geojson",
+      "expected_file_hint": "geovisor/capas/bethania_priorizacion_agregada.geojson",
       "resolution": "Agregado público sin datos personales",
       "style": {
         "fill_color": "#d95f02",
