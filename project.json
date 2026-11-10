@@ -180,7 +180,15 @@
       }
     ]
   },
-  "team": [],
+  "team": [
+    {
+      "name": "Rafael Ruiz Urizar",
+      "role": "Colaborador de iniciativa",
+      "institution": "UDEVIPO",
+      "github_username": "Rafael1962-ruiz",
+      "profile_url": "https://github.com/Rafael1962-ruiz"
+    }
+  ],
   "data_sources": [
     {
       "title": "Sentinel-2 / óptico multiespectral",

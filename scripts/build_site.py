@@ -554,7 +554,7 @@ def build_home_page(
           {badge_html(manifest['pmv']['scope_status'], 'Alcance PMV')}
         </div>
         <h1>{esc(manifest['title'])}</h1>
-        <p class="hero-author" style="font-size: clamp(1.6rem, 2.5vw, 2rem); font-weight: 700; color: var(--c-accent-yellow, #FFC800); margin: 0 0 1rem; letter-spacing: -0.01em;">Rafael Ruiz Urizar</p>
+        <p class="hero-subtitle" style="font-size: clamp(1.4rem, 2.2vw, 1.8rem); font-weight: 700; color: var(--c-accent-yellow, #FFC800); margin: 0 0 1rem; letter-spacing: -0.01em;">Asentamiento León de Judá en la península Bethania, zona 7 de Guatemala</p>
         <p class="hero-lead">{esc(manifest['summary'])}</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="{html.escape(ctx.site_url('aplicacion/'), quote=True)}">Abrir Geovisor (GeoLibre)</a>
@@ -736,7 +736,7 @@ def build_proyecto_page(
           <span class="badge badge-country">{esc(manifest['id'])}</span>
         </div>
         <h1>{esc(manifest['title'])}</h1>
-        <p class="hero-author" style="font-size: clamp(1.6rem, 2.5vw, 2rem); font-weight: 700; color: var(--c-accent-yellow, #FFC800); margin: 0 0 1rem; letter-spacing: -0.01em;">Rafael Ruiz Urizar</p>
+        <p class="hero-subtitle" style="font-size: clamp(1.4rem, 2.2vw, 1.8rem); font-weight: 700; color: var(--c-accent-yellow, #FFC800); margin: 0 0 1rem; letter-spacing: -0.01em;">Asentamiento León de Judá en la península Bethania, zona 7 de Guatemala</p>
         <p class="hero-lead">Alcance territorial en {esc(manifest['territory']['label'])}, criterios del PMV, instituciones participantes y trazabilidad documental desde <code>project.json</code>.</p>
       </div>
     </section>
