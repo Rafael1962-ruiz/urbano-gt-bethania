@@ -36,6 +36,24 @@
   "external_references": [],
   "layers": [
     {
+      "id": "gt-zona7-referencia-osm",
+      "title": "Ámbito envolvente referencial: Zona 7, Ciudad de Guatemala (OSM ODbL)",
+      "group": "Ámbito piloto",
+      "format": "geojson",
+      "geometry_type": "polygon",
+      "status": "en_revision",
+      "source_path": "geovisor/capas/zona7_bethania_referencia_osm.geojson",
+      "expected_file_hint": "geovisor/capas/zona7_bethania_referencia_osm.geojson",
+      "resolution": "Vectorial zonal referencial (EPSG:4326)",
+      "style": {
+        "fill_color": "#007F8B",
+        "fill_opacity": 0.15,
+        "stroke_color": "#14283F",
+        "stroke_width": 2.2
+      },
+      "caveat": "Fuente externa abierta: OpenStreetMap contributors (ODbL). Muestra el contorno general de la Zona 7 donde se ubica Colonia Bethania; no sustituye el polígono piloto de 21,1 ha de UDEVIPO."
+    },
+    {
       "id": "gt-bethania-ambito-piloto",
       "title": "Polígono de estudio en Colonia Bethania (Zona 7)",
       "group": "Ámbito piloto",

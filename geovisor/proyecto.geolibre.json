@@ -1,48 +1,75 @@
 {
-  "version": "1.0.0",
-  "id": "geolibre-gt-bethania",
-  "name": "Guatemala · Bethania: asentamientos en alto riesgo",
   "description": "La iniciativa propone organizar información de la huella urbana y de los lotes en Bethania para apoyar la revisión de condiciones de riesgo y orientar decisiones institucionales sobre obras de protección o escrituración.",
-  "metadata": {
-    "project_id": "gt-bethania",
-    "community": "Comunidad Urbana Copernicus Centroamérica",
-    "referential_frame_only": true,
-    "note": "Centroide declarado en S20: 14.67209, -90.52353 (Colonia Bethania, Zona 7, Ciudad de Guatemala; ≈ 21,1 ha declaradas en formulario)."
-  },
+  "id": "geolibre-gt-bethania",
+  "layers": [
+    {
+      "id": "gt-zona7-referencia-osm",
+      "name": "Ámbito envolvente referencial: Zona 7, Ciudad de Guatemala (OSM ODbL)",
+      "source": "gt-zona7-referencia-osm",
+      "status": "en_revision",
+      "style": {
+        "fill_color": "#007F8B",
+        "fill_opacity": 0.15,
+        "stroke_color": "#14283F",
+        "stroke_width": 2.2
+      },
+      "visible": true
+    }
+  ],
   "map": {
-    "engine": "maplibre",
+    "basemap": "carto-positron",
+    "bearing": 0,
     "center": [
       -90.52353,
       14.67209
     ],
-    "zoom": 15.2,
-    "bearing": 0,
+    "engine": "maplibre",
     "pitch": 0,
-    "basemap": "carto-positron"
+    "zoom": 15.2
   },
-  "sources": {},
-  "layers": [],
+  "metadata": {
+    "community": "Comunidad Urbana Copernicus Centroamérica",
+    "note": "Centroide declarado en S20: 14.67209, -90.52353 (Colonia Bethania, Zona 7, Ciudad de Guatemala; ≈ 21,1 ha declaradas en formulario).",
+    "project_id": "gt-bethania",
+    "referential_frame_only": false,
+    "schema_version": "1.0.0"
+  },
+  "name": "Guatemala · Bethania: asentamientos en alto riesgo",
   "planned_layers": [
     {
-      "id": "gt-bethania-ambito-piloto",
-      "title": "Polígono de estudio en Colonia Bethania (Zona 7)",
-      "status": "en_preparacion",
+      "caveat": "Fuente externa abierta: OpenStreetMap contributors (ODbL). Muestra el contorno general de la Zona 7 donde se ubica Colonia Bethania; no sustituye el polígono piloto de 21,1 ha de UDEVIPO.",
+      "expected_file_hint": "geovisor/capas/zona7_bethania_referencia_osm.geojson",
+      "id": "gt-zona7-referencia-osm",
+      "status": "en_revision",
+      "title": "Ámbito envolvente referencial: Zona 7, Ciudad de Guatemala (OSM ODbL)"
+    },
+    {
+      "caveat": "Pendiente de confirmar disponibilidad efectiva del polígono y levantamientos de campo.",
       "expected_file_hint": "geovisor/data/bethania_ambito.geojson",
-      "caveat": "Pendiente de confirmar disponibilidad efectiva del polígono y levantamientos de campo."
+      "id": "gt-bethania-ambito-piloto",
+      "status": "en_preparacion",
+      "title": "Polígono de estudio en Colonia Bethania (Zona 7)"
     },
     {
-      "id": "gt-bethania-huella-preliminar",
-      "title": "Mapa preliminar de huella urbana y edificaciones",
-      "status": "en_preparacion",
+      "caveat": "Identifica presencia física construida; no asigna nivel de riesgo individual ni autoriza escrituración.",
       "expected_file_hint": "geovisor/data/bethania_huella_urbana.geojson",
-      "caveat": "Identifica presencia física construida; no asigna nivel de riesgo individual ni autoriza escrituración."
+      "id": "gt-bethania-huella-preliminar",
+      "status": "en_preparacion",
+      "title": "Mapa preliminar de huella urbana y edificaciones"
     },
     {
-      "id": "gt-bethania-sectores-priorizacion",
-      "title": "Sectores agregados para priorización de verificación técnica",
-      "status": "en_preparacion",
+      "caveat": "Requiere definir variables, modelo de elevación/LiDAR y criterios institucionales de UDEVIPO antes de publicar.",
       "expected_file_hint": "geovisor/data/bethania_priorizacion_agregada.geojson",
-      "caveat": "Requiere definir variables, modelo de elevación/LiDAR y criterios institucionales de UDEVIPO antes de publicar."
+      "id": "gt-bethania-sectores-priorizacion",
+      "status": "en_preparacion",
+      "title": "Sectores agregados para priorización de verificación técnica"
     }
-  ]
+  ],
+  "sources": {
+    "gt-zona7-referencia-osm": {
+      "type": "geojson",
+      "url": "/geovisor/capas/zona7_bethania_referencia_osm.geojson"
+    }
+  },
+  "version": "1.0.0"
 }
