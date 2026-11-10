@@ -555,7 +555,7 @@ def build_home_page(
         </div>
         <h1>{esc(manifest['title'])}</h1>
         <p class="hero-subtitle" style="font-size: clamp(1.3rem, 2vw, 1.65rem); font-weight: 700; color: var(--c-accent-yellow, #FFC800); margin: 0 0 0.4rem; letter-spacing: -0.01em;">Asentamiento León de Judá en la península Bethania, zona 7 de Guatemala</p>
-        <p class="hero-author" style="font-size: 1.2rem; font-weight: 600; color: #FFFFFF; margin: 0 0 1rem; opacity: 0.95;">Rafael Ruiz Urizar</p>
+        <p class="hero-author" style="font-size: clamp(1.85rem, 3vw, 2.4rem); font-weight: 800; color: #FFFFFF; margin: 0.2rem 0 1.2rem; letter-spacing: -0.015em; line-height: 1.2;">Rafael Ruiz Urizar</p>
         <p class="hero-lead">{esc(manifest['summary'])}</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="{html.escape(ctx.site_url('aplicacion/'), quote=True)}">Abrir Geovisor (GeoLibre)</a>
@@ -738,7 +738,7 @@ def build_proyecto_page(
         </div>
         <h1>{esc(manifest['title'])}</h1>
         <p class="hero-subtitle" style="font-size: clamp(1.3rem, 2vw, 1.65rem); font-weight: 700; color: var(--c-accent-yellow, #FFC800); margin: 0 0 0.4rem; letter-spacing: -0.01em;">Asentamiento León de Judá en la península Bethania, zona 7 de Guatemala</p>
-        <p class="hero-author" style="font-size: 1.2rem; font-weight: 600; color: #FFFFFF; margin: 0 0 1rem; opacity: 0.95;">Rafael Ruiz Urizar</p>
+        <p class="hero-author" style="font-size: clamp(1.85rem, 3vw, 2.4rem); font-weight: 800; color: #FFFFFF; margin: 0.2rem 0 1.2rem; letter-spacing: -0.015em; line-height: 1.2;">Rafael Ruiz Urizar</p>
         <p class="hero-lead">Alcance territorial en {esc(manifest['territory']['label'])}, criterios del PMV, instituciones participantes y trazabilidad documental desde <code>project.json</code>.</p>
       </div>
     </section>
