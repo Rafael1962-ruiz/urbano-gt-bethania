@@ -2,6 +2,8 @@
 
 ## Asentamiento León de Judá en la península Bethania, zona 7 de Guatemala
 
+**Autor / Colaborador:** Rafael Ruiz Urizar
+
 La iniciativa propone organizar información de la huella urbana y de los lotes en Bethania para apoyar la revisión de condiciones de riesgo y orientar decisiones institucionales sobre obras de protección o escrituración.
 
 ## Propósito
